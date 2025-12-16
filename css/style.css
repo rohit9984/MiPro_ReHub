@@ -1,0 +1,124 @@
+body, header, main, section, footer, .card, .cta-btn {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #222;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 40px;
+  background: #0e1a2b;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 18px;
+}
+
+.nav-links a {
+  color: #cfd8e3;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+.nav-links .btn {
+  padding: 6px 14px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* HERO */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: white;
+}
+
+.cta-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: #0a3d62;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/* INFO SECTION */
+.info {
+  padding: 40px 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-left: 5px solid #0a3d62;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #eee;
+}
+
+/* RESPONSIVE */
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
+
+/* Automatically use dark mode styles if the OS setting is dark, unless a user preference is saved
+@media (prefers-color-scheme: dark) {
+    /* These styles apply if the OS is dark, *and* the body doesn't have the light class explicitly set */
+    /* body:not(.light-mode) {
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+} */
+
+/* Ensure our manual toggle still overrides the system preference */
+/* body.light-mode { */
+     /* background-color: #ffffff;
+     color: #000000;
+} */ 
+
